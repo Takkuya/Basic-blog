@@ -7,7 +7,6 @@ import {
   InstagramIcon,
   LinkedinIcon,
   StyledLink,
-  TwitterIcon,
 } from "./styles";
 
 interface Props {
@@ -19,15 +18,18 @@ export const Header: React.FC<Props> = ({ toggleTheme }) => {
 
   return (
     <HeaderContainer>
-      <h2 id="logo">Gabriel Takuya Yamamoto</h2>
+      <h2 id="logo">GabrielYamamoto</h2>
 
       <section id="linksSection">
         <StyledLink to="/">Home</StyledLink>
         <StyledLink to="/projetos">Projetos</StyledLink>
 
-        <InstagramIcon />
-        <TwitterIcon />
-        <LinkedinIcon />
+        <a href="https://www.instagram.com/takkuyya_00/">
+          <InstagramIcon />
+        </a>
+        <a href="">
+          <LinkedinIcon />
+        </a>
 
         <Switch
           onChange={toggleTheme}

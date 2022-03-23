@@ -12,4 +12,11 @@ export default {
     paragraphText: "#4A5568",
     text: "#000",
   },
+  breakpoints: {
+    xs: "0px",
+    sm: "576px",
+    md: "768px",
+    lg: "1050px",
+    xl: "1291px",
+  },
 };

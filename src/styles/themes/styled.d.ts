@@ -15,5 +15,12 @@ declare module "styled-components" {
       paragraphText: string;
       text: string;
     };
+    breakpoints: {
+      xs: string;
+      sm: string;
+      md: string;
+      lg: string;
+      xl: string;
+    };
   }
 }

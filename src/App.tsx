@@ -7,7 +7,7 @@ function App() {
       <MainRoutes />
       <div className="App">
         Hello World
-        <SVGIcon />
+        {/* <SVGIcon /> */}
       </div>
     </>
   );

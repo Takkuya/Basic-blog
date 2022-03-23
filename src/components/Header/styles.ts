@@ -11,7 +11,6 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  padding: 36px 80px;
   color: ${(props) => props.theme.colors.text};
 
   a {
@@ -20,16 +19,22 @@ export const HeaderContainer = styled.div`
   }
 
   #logo {
-    font-weight: 600;
-    font-size: 1.4rem;
+    font-weight: 800;
+    font-size: 1.4em;
   }
 
   #linksSection {
     display: flex;
     justify-content: space-between;
-    gap: 30px;
     align-items: center;
+    gap: 1.5em;
   }
+
+  ${({ theme: { breakpoints } }) => css`
+    @media (max-width: ${breakpoints.md}) {
+      background-color: red;
+    }
+  `}
 `;
 
 export const StyledLink = styled(Link)`
