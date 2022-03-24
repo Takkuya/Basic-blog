@@ -8,8 +8,8 @@ export default {
     alternativeBackground: "red",
     iconColor: "#ffb331",
 
-    headingText: "#2D3748",
-    paragraphText: "#4A5568",
+    headingText: "#fff",
+    paragraphText: "#fff",
     text: "#fff",
   },
   breakpoints: {

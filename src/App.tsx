@@ -1,14 +1,11 @@
 import { MainRoutes } from "./routes";
-import { ReactComponent as SVGIcon } from "./assets/Progressive_App.svg";
+import { LandingPage } from "./components/LandingPage";
 
 function App() {
   return (
     <>
       <MainRoutes />
-      <div className="App">
-        Hello World
-        {/* <SVGIcon /> */}
-      </div>
+      <div className="App"></div>
     </>
   );
 }

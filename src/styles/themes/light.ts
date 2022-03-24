@@ -2,7 +2,7 @@ export default {
   title: "light",
 
   colors: {
-    primary: "#00BFA6",
+    primary: "#c62e65",
     mainBackground: "#fff",
     landingPageBackground: "#FBFBFB",
     alternativeBackground: "#F7FAFC",

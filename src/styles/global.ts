@@ -12,6 +12,8 @@ export default createGlobalStyle`
  button {
      border: none;
      cursor: pointer;
+     background: none;
+     font-size: 1em;
  }
 
  input {
@@ -19,12 +21,14 @@ export default createGlobalStyle`
      outline: none;
  }
 
+
  body {
      background: ${(props) => props.theme.colors.mainBackground};
-     padding: 2em 5em;
  }
 
-
+ .globalPadding {
+  padding: 2em 4em;
+ }
 
 ${({ theme: { breakpoints } }) => css`
   html {
@@ -37,17 +41,17 @@ ${({ theme: { breakpoints } }) => css`
   }
   @media (min-width: ${breakpoints.md}) {
     html {
-      font-size: 100%; //15px
+      font-size: 106%; //15px
     }
   }
   @media (min-width: ${breakpoints.lg}) {
     html {
-      font-size: 100%; //15px
+      font-size: 112%; //15px
     }
   }
   @media (min-width: ${breakpoints.xl}) {
     html {
-      font-size: 100%; //15px
+      font-size: 118%; //15px
     }
   }
 `}

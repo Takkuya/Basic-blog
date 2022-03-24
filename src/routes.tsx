@@ -7,6 +7,7 @@ import usePersistedState from "./hooks/usePersistedState";
 import dark from "./styles/themes/dark";
 import light from "./styles/themes/light";
 import GlobalStyle from "./styles/global";
+import { LandingPage } from "./components/LandingPage";
 
 export const MainRoutes = () => {
   const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", light);
@@ -20,6 +21,7 @@ export const MainRoutes = () => {
       <GlobalStyle />
       <BrowserRouter>
         <Header toggleTheme={toggleTheme} />
+        <LandingPage />
 
         <Routes>
           <Route path="projetos" element={<Projects />} />
