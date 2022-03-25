@@ -2,17 +2,13 @@ import styled, { css } from "styled-components";
 
 export const LandingPageContainer = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 2em;
 
   background-color: ${(props) => props.theme.colors.landingPageBackground};
-  padding: 2em 10em;
 
   #textsContainer {
     display: flex;
     flex-direction: column;
-
-    //o texto about não ficar grudado com o svg
     flex: 1;
 
     .title {
@@ -24,13 +20,10 @@ export const LandingPageContainer = styled.div`
     }
 
     .about {
-      text-align: justify;
+      max-width: 100%;
 
-      //o texto about não ficar grudado com o svg
-      max-width: 70%;
       span {
         color: ${(props) => props.theme.colors.paragraphText};
-        text-align: justify;
       }
 
       p {
@@ -38,11 +31,10 @@ export const LandingPageContainer = styled.div`
         color: ${(props) => props.theme.colors.paragraphText};
       }
     }
-
     .buttons {
       display: flex;
       align-items: center;
-      margin-top: 0.5em;
+      margin-top: 1em;
       gap: 1em;
 
       button {
@@ -66,31 +58,58 @@ export const LandingPageContainer = styled.div`
   }
 
   #svgContainer {
-    display: flex;
-    max-width: 100%;
+    display: hidden;
+    max-width: 0;
   }
 
   svg {
-    max-width: 400px;
-    max-height: 400px;
-    flex-grow: 0;
+    max-width: 0;
+    max-height: 0;
   }
 
   ${({ theme: { breakpoints } }) => css`
-    @media (max-width: ${breakpoints.md}) {
-      padding: 2em 4em;
+    @media (min-width: ${breakpoints.md}) {
+      padding: 2em 5em;
+      /* background-color: red; */
+    }
+    @media (min-width: ${breakpoints.lg}) {
+      #textsContainer {
+        .about {
+          max-width: 60%;
+        }
+      }
+    }
+
+    @media (min-width: ${breakpoints.xl}) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      background-color: ${(props) => props.theme.colors.landingPageBackground};
+      padding: 5em 10em;
 
       #textsContainer {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+
+        flex: 1;
+
         .about {
-          max-width: 100%;
+          text-align: justify;
+
+          max-width: 70%;
         }
       }
 
       #svgContainer {
-        display: hidden;
-        max-width: 0;
+        display: flex;
+        max-width: 100%;
+      }
+
+      svg {
+        max-width: 400px;
+        max-height: 400px;
+        flex-grow: 0;
       }
     }
   `}

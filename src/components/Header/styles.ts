@@ -53,7 +53,8 @@ export const HeaderContainer = styled.div`
   }
 
   ${({ theme: { breakpoints } }) => css<{ open: boolean }>`
-    @media (max-width: ${breakpoints.sm}) {
+    @media (max-width: ${breakpoints.md}) {
+      padding: 2em;
       //itens dentro do menu de hamburguer
       #linksSection {
         display: flex;
