@@ -63,7 +63,7 @@ export const HeaderContainer = styled.div`
         justify-content: stretch;
         /* se colocar o padding na parte de cima caga tudo */
         position: absolute;
-        top: 120%;
+        top: 100%;
         left: 0;
         right: 0;
 

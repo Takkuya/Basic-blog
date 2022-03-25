@@ -2,15 +2,17 @@ import styled, { css } from "styled-components";
 
 export const LandingPageContainer = styled.div`
   display: flex;
+  justify-content: space-between;
   align-items: center;
 
   background-color: ${(props) => props.theme.colors.landingPageBackground};
-  padding: 2em 8em;
+  padding: 5em 10em;
 
   #textsContainer {
     display: flex;
     flex-direction: column;
-    gap: 0.6em;
+    //o texto about não ficar grudado com o svg
+    flex: 1;
 
     .title {
       h2 {
@@ -21,8 +23,10 @@ export const LandingPageContainer = styled.div`
     }
 
     .about {
-      width: 60%;
       text-align: justify;
+
+      //o texto about não ficar grudado com o svg
+      max-width: 70%;
       span {
         color: ${(props) => props.theme.colors.paragraphText};
         text-align: justify;
@@ -61,13 +65,14 @@ export const LandingPageContainer = styled.div`
   }
 
   #svgContainer {
-    display: block;
+    display: flex;
     max-width: 100%;
   }
 
   svg {
-    width: 100%;
-    height: 10%;
+    max-width: 400px;
+    max-height: 400px;
+    flex-grow: 0;
   }
 
   ${({ theme: { breakpoints } }) => css`
@@ -77,11 +82,8 @@ export const LandingPageContainer = styled.div`
       #textsContainer {
         display: flex;
         justify-content: center;
-      }
-
-      .about {
-        span {
-          width: 100%;
+        .about {
+          max-width: 100%;
         }
       }
 
