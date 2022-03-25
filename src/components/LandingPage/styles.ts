@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 export const LandingPageContainer = styled.div`
   display: flex;
   padding: 2em;
+  gap: 10px;
 
   background-color: ${(props) => props.theme.colors.landingPageBackground};
 

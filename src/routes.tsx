@@ -21,9 +21,8 @@ export const MainRoutes = () => {
       <GlobalStyle />
       <BrowserRouter>
         <Header toggleTheme={toggleTheme} />
-        <LandingPage />
-
         <Routes>
+          <Route path="" element={<LandingPage />} />
           <Route path="projetos" element={<Projects />} />
         </Routes>
       </BrowserRouter>
