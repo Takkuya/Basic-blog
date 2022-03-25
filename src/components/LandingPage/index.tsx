@@ -3,7 +3,7 @@ import { LandingPageContainer } from "./styles";
 
 export const LandingPage = () => {
   return (
-    <LandingPageContainer className="globalPadding">
+    <LandingPageContainer>
       <section id="textsContainer">
         <div className="about">
           <p>Olá, me chamo</p>

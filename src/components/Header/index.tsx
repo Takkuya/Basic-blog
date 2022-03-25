@@ -20,7 +20,7 @@ export const Header: React.FC<Props> = ({ toggleTheme }) => {
   const [isHamburguerMenuOpen, setIsHamburguerMenuOpen] = useState(false);
 
   return (
-    <HeaderContainer open={isHamburguerMenuOpen} className="globalPadding">
+    <HeaderContainer open={isHamburguerMenuOpen}>
       <StyledLink to="">
         <h2 id="logo">GTY</h2>
       </StyledLink>

@@ -26,9 +26,6 @@ export default createGlobalStyle`
      background: ${(props) => props.theme.colors.mainBackground};
  }
 
- .globalPadding {
-  padding: 2em 4em;
- }
 
 ${({ theme: { breakpoints } }) => css`
   html {

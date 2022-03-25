@@ -6,11 +6,12 @@ export const LandingPageContainer = styled.div`
   align-items: center;
 
   background-color: ${(props) => props.theme.colors.landingPageBackground};
-  padding: 5em 10em;
+  padding: 2em 10em;
 
   #textsContainer {
     display: flex;
     flex-direction: column;
+
     //o texto about não ficar grudado com o svg
     flex: 1;
 

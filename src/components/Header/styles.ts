@@ -13,7 +13,7 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 4em;
+  padding: 2em 5em;
 
   //fixar header
   position: sticky;
