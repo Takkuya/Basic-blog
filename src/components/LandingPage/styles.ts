@@ -2,15 +2,16 @@ import styled, { css } from "styled-components";
 
 export const LandingPageContainer = styled.div`
   display: flex;
+  justify-content: space-around;
   padding: 2em;
   gap: 10px;
-
   background-color: ${(props) => props.theme.colors.landingPageBackground};
 
   #textsContainer {
     display: flex;
     flex-direction: column;
     flex: 1;
+    text-align: justify;
 
     .title {
       h2 {
@@ -71,7 +72,6 @@ export const LandingPageContainer = styled.div`
   ${({ theme: { breakpoints } }) => css`
     @media (min-width: ${breakpoints.md}) {
       padding: 2em 5em;
-      /* background-color: red; */
     }
     @media (min-width: ${breakpoints.lg}) {
       #textsContainer {
@@ -83,22 +83,24 @@ export const LandingPageContainer = styled.div`
 
     @media (min-width: ${breakpoints.xl}) {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      flex-direction: column;
 
-      background-color: ${(props) => props.theme.colors.landingPageBackground};
       padding: 5em 10em;
+
+      #landingPageContainer {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
 
       #textsContainer {
         display: flex;
         flex-direction: column;
-
         flex: 1;
 
         .about {
           text-align: justify;
 
-          max-width: 70%;
+          max-width: 60%;
         }
       }
 
