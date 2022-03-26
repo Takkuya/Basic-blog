@@ -19,33 +19,49 @@ export const AboutContainer = styled.div`
   padding: 2em;
   text-align: justify;
 
-  h1 {
-    text-align: center;
-  }
-
-  div {
-    border: 1px solid ${(props) => props.theme.colors.primary};
-    width: 35%;
-    align-self: center;
-  }
-
-  h3 {
-    text-align: center;
-  }
-
-  #myInformationContainer,
-  #myStackContainer {
+  #aboutMeTextContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 1em;
+    align-items: center;
+    align-self: center;
+
+    h1 {
+      text-align: center;
+    }
+
+    div {
+      border: 1px solid ${(props) => props.theme.colors.primary};
+      align-self: center;
+      width: 100%;
+    }
   }
 
-  #myStackContainer {
-    #iconsContainer {
+  h2 {
+    text-align: center;
+  }
+
+  #wrapInformationContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    #myInformationContainer,
+    #myStackContainer {
       display: flex;
-      gap: 1em;
+      flex-direction: column;
       justify-content: center;
+      gap: 1em;
+      flex-wrap: wrap;
+    }
+
+    #myStackContainer {
+      #iconsContainer {
+        display: flex;
+        gap: 1em;
+        justify-content: center;
+        //faz os elementos se partirem quando "menores"
+        flex-wrap: wrap;
+      }
     }
   }
 
@@ -54,7 +70,28 @@ export const AboutContainer = styled.div`
   ${({ theme: { breakpoints } }) => css`
     @media (min-width: ${breakpoints.md}) {
       padding: 2em 5em;
-      background-color: blue;
+
+      svg {
+        width: 1.8em;
+        height: 1.8em;
+      }
+
+      #wrapInformationContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 3em;
+
+        #myInformationContainer {
+          max-width: 50%;
+        }
+
+        #myStackContainer {
+          #iconsContainer {
+            display: flex;
+          }
+        }
+      }
     }
 
     @media (min-width: ${breakpoints.lg}) {
