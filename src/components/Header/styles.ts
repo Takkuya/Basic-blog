@@ -1,10 +1,5 @@
 import styled, { css } from "styled-components";
-import {
-  AiFillInstagram,
-  AiOutlineTwitter,
-  AiFillLinkedin,
-  AiOutlineClose,
-} from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
@@ -91,27 +86,6 @@ export const HeaderContainer = styled.div`
 
 export const StyledLink = styled(Link)`
   color: ${(props) => props.theme.colors.text};
-`;
-
-const iconCSS = css`
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-  fill: ${(props) => props.theme.colors.iconColor};
-  width: 1.5em;
-  height: 1.5em;
-`;
-
-export const InstagramIcon = styled(AiFillInstagram)`
-  ${iconCSS}
-`;
-
-export const TwitterIcon = styled(AiOutlineTwitter)`
-  ${iconCSS}
-`;
-
-export const LinkedinIcon = styled(AiFillLinkedin)`
-  ${iconCSS}
 `;
 
 export const HamburguerMenu = styled(GiHamburgerMenu)`

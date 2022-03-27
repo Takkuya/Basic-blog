@@ -6,8 +6,6 @@ import {
   CloseBtn,
   HamburguerMenu,
   HeaderContainer,
-  InstagramIcon,
-  LinkedinIcon,
   StyledLink,
 } from "./styles";
 
@@ -28,13 +26,6 @@ export const Header: React.FC<Props> = ({ toggleTheme }) => {
       <section id="linksSection">
         <StyledLink to="">Home</StyledLink>
         <StyledLink to="projetos">Projetos</StyledLink>
-        {/* 
-        <a href="https://www.instagram.com/takkuyya_00/">
-          <InstagramIcon />
-        </a>
-        <a href="https://www.linkedin.com/in/gabriel-takuya-yamamoto-8a05691a4/">
-          <LinkedinIcon />
-        </a> */}
 
         <Switch
           onChange={toggleTheme}

@@ -1,5 +1,6 @@
 import { ReactComponent as SVGIcon } from "../../assets/Programmer.svg";
 import { About } from "../About";
+import { Footer } from "../Footer";
 import { LandingPageContainer } from "./styles";
 
 export const LandingPage = () => {
@@ -35,6 +36,7 @@ export const LandingPage = () => {
         </section>
       </LandingPageContainer>
       <About />
+      <Footer />
     </>
   );
 };
