@@ -85,7 +85,7 @@ export const LandingPageContainer = styled.div`
       display: flex;
       flex-direction: column;
 
-      padding: 5em 10em;
+      padding: 2em 10em;
 
       #landingPageContainer {
         display: flex;
@@ -99,8 +99,7 @@ export const LandingPageContainer = styled.div`
 
         .about {
           text-align: justify;
-
-          max-width: 60%;
+          max-width: 70%;
         }
       }
 

@@ -3,7 +3,6 @@ import {
   CSSIcon,
   HtmlIcon,
   JavascriptIcon,
-  PythonIcon,
   ReactIcon,
   GitIcon,
   TypescriptIcon,
@@ -18,11 +17,10 @@ export const About = () => {
       </section>
       <section id="wrapInformationContainer">
         <section id="myInformationContainer">
-          <h2>Mais sobre mim</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat{" "}
             <a href="#">projetos</a> enim omnis, quos consectetur und. Lorem,
-            ipsum dolor sit amet consectetur adipisicing elit. Repellat{" "}
+            ipsum dolor sit amet consectetur adipisicing elit. Repellat {""}
             <a href="#">projetos</a> enim omnis, quos consectetur und.
           </p>
         </section>
@@ -35,7 +33,6 @@ export const About = () => {
             <JavascriptIcon />
             <TypescriptIcon />
             <ReactIcon />
-            <PythonIcon />
             <GitIcon />
           </section>
         </section>
