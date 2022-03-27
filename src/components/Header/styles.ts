@@ -13,7 +13,11 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 5em;
+  padding: 1em 5em;
+
+  //blur
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 
   //fixar header
   position: sticky;
