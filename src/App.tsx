@@ -1,5 +1,4 @@
 import { MainRoutes } from "./routes";
-import { About } from "./components/About";
 
 function App() {
   return (

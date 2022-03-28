@@ -11,18 +11,15 @@ export const Footer = () => {
     <FooterContainer>
       <section id="footerIconsContainer">
         <a href="https://github.com/Takkuya">
-          {" "}
           <GithubIcon />
         </a>
         <a href="https://www.linkedin.com/notifications/">
           <LinkedinIcon />
         </a>
         <a href="mailto:takuyagabriel@gmail.com">
-          {" "}
           <EmailIcon />
         </a>
         <a href="https://www.instagram.com/takkuyya_00/">
-          {" "}
           <InstagramIcon />
         </a>
       </section>

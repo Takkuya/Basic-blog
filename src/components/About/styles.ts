@@ -77,30 +77,19 @@ export const AboutContainer = styled.div`
 
   ${({ theme: { breakpoints } }) => css`
     @media (min-width: ${breakpoints.md}) {
-      padding: 2em 5em;
-      margin-top: 1em;
-      gap: 2em;
+      padding: 1em 5em;
+
+      #myInformationContainer {
+        max-width: 100%;
+      }
 
       #wrapInformationContainer {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 2em;
-
-        #myInformationContainer {
-          max-width: 48%;
-        }
-
-        #myStackContainer {
-          #iconsContainer {
-            display: flex;
-          }
-        }
+        justify-content: center;
+        align-items: center;
       }
     }
 
     @media (min-width: ${breakpoints.xl}) {
-      gap: 2em;
       padding: 5em 15em;
     }
   `}

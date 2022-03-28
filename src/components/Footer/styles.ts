@@ -10,6 +10,7 @@ export const FooterContainer = styled.footer`
   flex-wrap: wrap;
   gap: 1em;
   padding: 1em;
+  background-color: ${(props) => props.theme.colors.landingPageBackground};
 
   #footerIconsContainer {
     display: flex;
