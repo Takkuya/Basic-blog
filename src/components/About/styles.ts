@@ -11,9 +11,10 @@ export const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 1400px;
+  padding-top: 4em;
   gap: 1em;
 
-  padding: 2em;
   text-align: justify;
 
   #aboutMeTextContainer {
@@ -42,7 +43,9 @@ export const AboutContainer = styled.div`
   #wrapInformationContainer {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 2em;
+    margin: 0 auto;
+    width: 80%;
 
     #myInformationContainer,
     #myStackContainer {
@@ -77,10 +80,9 @@ export const AboutContainer = styled.div`
 
   ${({ theme: { breakpoints } }) => css`
     @media (min-width: ${breakpoints.md}) {
-      padding: 1em 5em;
-
       #myInformationContainer {
-        max-width: 100%;
+        margin: 0 auto;
+        width: 67%;
       }
 
       #wrapInformationContainer {
@@ -90,7 +92,8 @@ export const AboutContainer = styled.div`
     }
 
     @media (min-width: ${breakpoints.xl}) {
-      padding: 5em 15em;
+      max-width: 90%;
+      margin: 0 auto;
     }
   `}
 `;

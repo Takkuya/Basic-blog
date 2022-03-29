@@ -11,8 +11,8 @@ export const HeaderContainer = styled.div`
   padding: 1em 5em;
 
   //blur
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 
   //fixar header
   position: sticky;

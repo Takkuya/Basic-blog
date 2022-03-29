@@ -2,15 +2,20 @@ import styled, { css } from "styled-components";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 
+export const Wrapper = styled.div`
+  background-color: ${(props) => props.theme.colors.alternativeBackground};
+`;
+
 export const FooterContainer = styled.footer`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 4em;
   gap: 1em;
   padding: 1em;
-  background-color: ${(props) => props.theme.colors.landingPageBackground};
+  width: 100%;
 
   #footerIconsContainer {
     display: flex;

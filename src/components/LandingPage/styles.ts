@@ -1,11 +1,26 @@
 import styled, { css } from "styled-components";
 
+export const Wrapper = styled.div`
+  background-color: ${(props) => props.theme.colors.alternativeBackground};
+`;
+
+export const LandingWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: ${(props) => props.theme.colors.alternativeBackground};
+
+  max-width: 1400px;
+  margin: 0 auto;
+`;
+
 export const LandingPageContainer = styled.div`
   display: flex;
   justify-content: space-around;
-  padding: 2em;
+
+  width: 80%;
   gap: 10px;
-  background-color: ${(props) => props.theme.colors.landingPageBackground};
+  padding: 2em 0;
 
   #textsContainer {
     display: flex;
@@ -71,7 +86,7 @@ export const LandingPageContainer = styled.div`
 
   ${({ theme: { breakpoints } }) => css`
     @media (min-width: ${breakpoints.md}) {
-      padding: 2em 5em;
+
     }
     @media (min-width: ${breakpoints.lg}) {
       #textsContainer {
@@ -84,8 +99,6 @@ export const LandingPageContainer = styled.div`
     @media (min-width: ${breakpoints.xl}) {
       display: flex;
       flex-direction: column;
-
-      padding: 2em 10em;
 
       #landingPageContainer {
         display: flex;
@@ -109,8 +122,8 @@ export const LandingPageContainer = styled.div`
       }
 
       svg {
-        max-width: 400px;
-        max-height: 400px;
+        max-width: 350px;
+        max-height: 350px;
         flex-grow: 0;
       }
     }

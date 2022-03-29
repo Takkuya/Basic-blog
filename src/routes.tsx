@@ -8,6 +8,7 @@ import dark from "./styles/themes/dark";
 import light from "./styles/themes/light";
 import GlobalStyle from "./styles/global";
 import { LandingPage } from "./components/LandingPage";
+import { Footer } from "./components/Footer";
 
 export const MainRoutes = () => {
   const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", light);
@@ -25,6 +26,7 @@ export const MainRoutes = () => {
           <Route path="" element={<LandingPage />} />
           <Route path="projetos" element={<Projects />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </ThemeProvider>
   );
