@@ -13,6 +13,7 @@ declare module "styled-components" {
       headingText: string;
       paragraphText: string;
       text: string;
+      shadow: string;
     };
     breakpoints: {
       xs: string;

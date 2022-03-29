@@ -1,11 +1,11 @@
-import { CardsContainer } from "./styles";
+import { CardsContainer, GithubIcon } from "./styles";
 
 export const Cards = () => {
   return (
     <CardsContainer>
       <section id="mainCardContainer">
         <img
-          src="https://media.discordapp.net/attachments/369658605450035210/958243708833267712/unknown.png?width=1368&height=683"
+          src="https://images.unsplash.com/photo-1648484479126-10c313d3722d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
           alt="Gica"
           id="cardImage"
         />
@@ -18,8 +18,13 @@ export const Cards = () => {
             doloribus magnam, laborum necessitatibus aspernatur incidunt quo
             perspiciatis ullam dignissimos sapiente laudantium.lore
           </p>
+          <a href="https://github.com/Takkuya/Basic-blog">
+            <button className="primaryBtn">
+              <GithubIcon />
+              GitHub
+            </button>
+          </a>
         </section>
-        <button>GitHub</button>
       </section>
     </CardsContainer>
   );

@@ -10,6 +10,7 @@ export default {
     headingText: "#2D3748",
     paragraphText: "#4A5568",
     text: "#000",
+    shadow: "#C0BDBD",
   },
   breakpoints: {
     xs: "0px",

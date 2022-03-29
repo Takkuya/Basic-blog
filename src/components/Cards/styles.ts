@@ -1,28 +1,29 @@
+import { AiFillGithub } from "react-icons/ai";
 import styled, { css } from "styled-components";
 
 export const CardsContainer = styled.div`
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  border-radius: 10px;
 
-  width: 40%;
+  width: 400px;
+  margin: 0 auto;
 
-  overflow: hidden;
+  box-shadow: 0 4px 4px 0 ${(props) => props.theme.colors.shadow};
 
   #mainCardContainer {
-    width: 100%;
-    #cardImage {
-      width: 100%;
+    width: 400px;
 
+    #cardImage {
       min-width: 100%;
       max-width: 100%;
-
-      height: auto;
-      object-fit: contain;
     }
 
     #cardTextContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
       padding: 1em;
 
       & > first-child {
@@ -36,25 +37,50 @@ export const CardsContainer = styled.div`
       p {
         font-size: 1em;
       }
+
+      a {
+        text-decoration: none;
+
+        button {
+          display: flex;
+          align-items: center;
+          border-radius: 10px;
+
+          padding: 0.6em;
+          background-color: ${(props) => props.theme.colors.primary};
+        }
+      }
     }
   }
 
-  /* ${({ theme: { breakpoints } }) => css`
+  ${({ theme: { breakpoints } }) => css`
     @media (min-width: ${breakpoints.sm}) {
-      max-width: 85vw;
-      background-color: yellow;
-    }
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      margin: 1em;
 
-    @media (min-width: ${breakpoints.sm}) {
-      max-width: 16rem;
-    }
+      width: 500px;
 
-    @media (min-width: ${breakpoints.lg}) {
-      max-width: 17rem;
-    }
+      overflow: hidden;
 
-    @media (min-width: ${breakpoints.xl}) {
-      max-width: 100vw;
+      #mainCardContainer {
+        width: 500px;
+        #cardImage {
+          min-width: 100%;
+          max-width: 100%;
+
+          height: auto;
+        }
+
+        img {
+          width: 10%;
+        }
+      }
     }
-  `} */
+  `}
+`;
+
+export const GithubIcon = styled(AiFillGithub)`
+  margin-right: 0.4em;
 `;
