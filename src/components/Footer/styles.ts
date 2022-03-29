@@ -3,7 +3,7 @@ import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 
 export const Wrapper = styled.div`
-  background-color: ${(props) => props.theme.colors.alternativeBackground};
+  background-color: ${(props) => props.theme.colors.landingPageBackground};
 `;
 
 export const FooterContainer = styled.footer`

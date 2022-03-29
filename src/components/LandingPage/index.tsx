@@ -1,4 +1,4 @@
-import { ReactComponent as SVGIcon } from "../../assets/Programmer.svg";
+import { ReactComponent as DarkSVGIcon } from "../../assets/DarkProgrammer.svg";
 import { About } from "../About";
 import { LandingPageContainer, LandingWrapper, Wrapper } from "./styles";
 
@@ -33,7 +33,7 @@ export const LandingPage = () => {
                 </div>
               </section>
               <section id="svgContainer">
-                <SVGIcon />
+                <DarkSVGIcon />
               </section>
             </section>
           </LandingPageContainer>

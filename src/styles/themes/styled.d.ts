@@ -9,7 +9,6 @@ declare module "styled-components" {
       mainBackground: string;
       landingPageBackground: string;
       alternativeBackground: string;
-      iconColor: string;
 
       headingText: string;
       paragraphText: string;

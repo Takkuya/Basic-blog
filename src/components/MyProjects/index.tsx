@@ -1,9 +1,10 @@
+import { Cards } from "../Cards";
 import { ProjectsContainer } from "./styles";
 
 export const Projects = () => {
   return (
     <ProjectsContainer>
-      <h1></h1>
+      <Cards />
     </ProjectsContainer>
   );
 };

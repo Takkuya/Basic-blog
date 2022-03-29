@@ -82,7 +82,7 @@ export const AboutContainer = styled.div`
     @media (min-width: ${breakpoints.md}) {
       #myInformationContainer {
         margin: 0 auto;
-        width: 67%;
+        width: 83%;
       }
 
       #wrapInformationContainer {

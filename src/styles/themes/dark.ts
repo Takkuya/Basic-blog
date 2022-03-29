@@ -3,10 +3,9 @@ export default {
 
   colors: {
     primary: "#00BFA6",
-    mainBackground: "#333",
-    landingPageBackground: "#333",
-    alternativeBackground: "red",
-    iconColor: "#ffb331",
+    mainBackground: "#111111ff",
+    landingPageBackground: "#161b22",
+    alternativeBackground: "#161b22",
 
     headingText: "#fff",
     paragraphText: "#fff",

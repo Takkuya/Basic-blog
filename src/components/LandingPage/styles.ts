@@ -1,14 +1,14 @@
 import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
-  background-color: ${(props) => props.theme.colors.alternativeBackground};
+  background-color: ${(props) => props.theme.colors.landingPageBackground};
 `;
 
 export const LandingWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: ${(props) => props.theme.colors.alternativeBackground};
+  background-color: ${(props) => props.theme.colors.landingPageBackground};
 
   max-width: 1400px;
   margin: 0 auto;
