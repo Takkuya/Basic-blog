@@ -49,6 +49,7 @@ export const AboutContainer = styled.div`
 
     #myInformationContainer,
     #myStackContainer {
+      max-width: 1100px;
       display: flex;
       flex-direction: column;
       justify-content: center;
