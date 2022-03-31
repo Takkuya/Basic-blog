@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Switch from "react-switch";
 
 import { ThemeContext } from "styled-components";
@@ -17,6 +17,15 @@ export const Header: React.FC<Props> = ({ toggleTheme }) => {
   const { colors, title } = useContext(ThemeContext);
   const [isHamburguerMenuOpen, setIsHamburguerMenuOpen] = useState(false);
 
+  //desativa o scroll quando abre o menu de hamburguer
+  useEffect(() => {
+    document.body.style.overflowY = isHamburguerMenuOpen ? "hidden" : "visible";
+  }, [isHamburguerMenuOpen]);
+
+  function closeMenuOnclick() {
+    setIsHamburguerMenuOpen(false);
+  }
+
   return (
     <HeaderContainer open={isHamburguerMenuOpen}>
       <StyledLink to="">
@@ -24,8 +33,20 @@ export const Header: React.FC<Props> = ({ toggleTheme }) => {
       </StyledLink>
 
       <section id="linksSection">
-        <StyledLink to="">Home</StyledLink>
-        <StyledLink to="projetos">Projetos</StyledLink>
+        <StyledLink
+          to=""
+          onClick={closeMenuOnclick}
+          className={({ isActive }) => (isActive ? "active" : "inactive")}
+        >
+          Home
+        </StyledLink>
+        <StyledLink
+          to="projetos"
+          onClick={closeMenuOnclick}
+          className={({ isActive }) => (isActive ? "active" : "inactive")}
+        >
+          Projetos
+        </StyledLink>
 
         <Switch
           onChange={toggleTheme}

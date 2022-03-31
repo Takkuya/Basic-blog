@@ -103,6 +103,12 @@ const iconCSS = css`
   width: 2.5em;
   height: 2.5em;
   cursor: pointer;
+
+  transition: 0.2s;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
 `;
 
 export const CSSIcon = styled(CssSvgIcon)`

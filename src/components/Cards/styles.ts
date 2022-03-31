@@ -50,6 +50,12 @@ export const CardsContainer = styled.div`
 
           padding: 0.6em;
           background-color: ${(props) => props.theme.colors.primary};
+
+          transition: 0.4s;
+
+          &:hover {
+            filter: brightness(80%);
+          }
         }
       }
     }

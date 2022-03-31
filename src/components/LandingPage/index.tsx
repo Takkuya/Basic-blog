@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ReactComponent as DarkSVGIcon } from "../../assets/DarkProgrammer.svg";
 import { About } from "../About";
 import { LandingPageContainer, LandingWrapper, Wrapper } from "./styles";
@@ -27,10 +28,14 @@ export const LandingPage = () => {
                     minima?
                   </span>
                 </div>
-                <div className="buttons">
-                  <button className="primaryBtn">Projetos</button>
-                  <button className="outlineBtn">Currículo</button>
-                </div>
+                <form className="buttons" action="Curriculum.pdf">
+                  <Link to="/projetos">
+                    <button className="primaryBtn">Projetos</button>
+                  </Link>
+                  <button className="outlineBtn" type="submit">
+                    Currículo
+                  </button>
+                </form>
               </section>
               <section id="svgContainer">
                 <DarkSVGIcon />

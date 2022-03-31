@@ -48,6 +48,12 @@ export const iconCSS = css`
   width: 1.5em;
   height: 1.5em;
   cursor: pointer;
+
+  transition: 0.2s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
 `;
 
 export const GithubIcon = styled(AiFillGithub)`

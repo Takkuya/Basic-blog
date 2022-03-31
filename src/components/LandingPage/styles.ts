@@ -63,6 +63,12 @@ export const LandingPageContainer = styled.div`
         background-color: ${(props) => props.theme.colors.primary};
         border-radius: 10px;
         padding: 0.6em;
+
+        transition: 0.4s;
+
+        &:hover {
+          filter: brightness(80%);
+        }
       }
 
       .outlineBtn {
@@ -70,6 +76,14 @@ export const LandingPageContainer = styled.div`
         border: 1px solid ${(props) => props.theme.colors.primary};
         border-radius: 10px;
         padding: 0.6em;
+
+        transition: 0.4s;
+
+        &:hover {
+          filter: brightness(80%);
+          background-color: ${(props) => props.theme.colors.primary};
+          color: ${(props) => props.theme.colors.mainBackground};
+        }
       }
     }
   }

@@ -2,24 +2,21 @@ import styled, { css } from "styled-components";
 import { AiOutlineClose } from "react-icons/ai";
 
 import { GiHamburgerMenu } from "react-icons/gi";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.div<{ open: boolean }>`
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1em 5em;
 
-  //blur
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: ${(props) => props.theme.colors.mainBackground};
 
   //fixar header
   position: sticky;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1;
 
   color: ${(props) => props.theme.colors.text};
 
@@ -34,6 +31,12 @@ export const HeaderContainer = styled.div`
     font-weight: 800;
     font-size: 1.6em;
     cursor: pointer;
+
+    transition: 0.2s;
+
+    &:hover {
+      color: ${(props) => props.theme.colors.primary};
+    }
   }
 
   #linksSection {
@@ -41,6 +44,16 @@ export const HeaderContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     gap: 1.5em;
+
+    //ativar esse estilo quando o link for selecionado
+    .active {
+      color: ${(props) => props.theme.colors.primary};
+      transition: 0.4s;
+
+      &:hover {
+        color: ${(props) => props.theme.colors.primary};
+      }
+    }
   }
 
   .hamburguerMenuBtn {
@@ -53,7 +66,7 @@ export const HeaderContainer = styled.div`
 
   ${({ theme: { breakpoints } }) => css<{ open: boolean }>`
     @media (max-width: ${breakpoints.md}) {
-      padding: 2em;
+      padding: 1em 2em;
       //itens dentro do menu de hamburguer
       #linksSection {
         display: flex;
@@ -69,8 +82,8 @@ export const HeaderContainer = styled.div`
 
         background-color: ${(props) => props.theme.colors.mainBackground};
 
-        max-height: ${({ open }) => (open ? "1000px" : "0px")};
-        height: calc(100vh - 100px);
+        max-height: ${({ open }) => (open ? "1100px" : "0px")};
+        height: calc(110vh - 100px);
       }
 
       .hamburguerMenuBtn {
@@ -83,9 +96,13 @@ export const HeaderContainer = styled.div`
     }
   `}
 `;
-
-export const StyledLink = styled(Link)`
+export const StyledLink = styled(NavLink)`
   color: ${(props) => props.theme.colors.text};
+  transition: 0.4s;
+
+  &:hover {
+    color: ${(props) => props.theme.colors.primary};
+  }
 `;
 
 export const HamburguerMenu = styled(GiHamburgerMenu)`

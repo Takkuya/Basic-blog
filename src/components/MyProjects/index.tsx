@@ -1,7 +1,12 @@
+import { useEffect } from "react";
 import { Cards } from "../Cards";
 import { ProjectsContainer } from "./styles";
 
 export const Projects = () => {
+  useEffect(() => {
+    document.title = "Projects | Gabriel Takuya Yamamoto";
+  }, []);
+
   return (
     <ProjectsContainer>
       <section id="projectsTitleContainer">
