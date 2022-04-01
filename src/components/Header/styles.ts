@@ -9,6 +9,8 @@ export const HeaderContainer = styled.div<{ open: boolean }>`
   justify-content: space-between;
   align-items: center;
   padding: 1em 5em;
+  max-width: 1868px;
+  margin: 0 auto;
 
   background-color: ${(props) => props.theme.colors.mainBackground};
 
