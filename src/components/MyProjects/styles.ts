@@ -51,6 +51,7 @@ export const ProjectsContainer = styled.div`
       justify-content: center;
       gap: 1em;
       flex-wrap: wrap;
+      text-align: center;
 
       p {
         color: ${(props) => props.theme.colors.paragraphText};
