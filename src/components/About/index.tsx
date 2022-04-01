@@ -18,14 +18,13 @@ export const About = () => {
       <section id="wrapInformationContainer">
         <section id="myInformationContainer">
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat{" "}
-            <a href="#">projetos</a> enim omnis, quos consectetur und. Lorem,
-            ipsum dolor sit amet consectetur adipisicing elit. Repellat {""}
-            <a href="#">projetos</a> enim omnis, quos consectetur und. Lorem,
-            ipsum dolor sit amet consectetur adipisicing elit. Repellat{" "}
-            <a href="#">projetos</a> enim omnis, quos consectetur und. Lorem,
-            ipsum dolor sit amet consectetur adipisicing elit. Repellat {""}
-            <a href="#">projetos</a> enim omnis, quos consectetur und.
+            No momento estou estudando ReactJS, e futuramente pretendo estudar
+            outras tecnologias como NextJS e Redux Toolkit, as quais serão
+            utilizadas eu projetos futuros que tenho em mente. Estou cursando
+            Ciência da computação na faculdade UNICID, abaixo você consegue
+            encontrar mais informações sobre as tecnologias que utilizo.
+            Sinta-se a vontade de me contatar, estou sempre disposto à novas
+            amizades e oportunidades!
           </p>
         </section>
 

@@ -21,11 +21,10 @@ export const LandingPage = () => {
                 </div>
                 <div className="about">
                   <span>
-                    Lori ipsum dolor sit amet consectetur adipisicing elit.
-                    Possimus, voluptate eius deserunt velit nam consequatur
-                    repellat delectus magni, quia sit cumque similique
-                    consequuntur? Illum ab debitis, excepturi iusto fugiat
-                    minima?
+                    Sou um desenvolvedor frontend brasileiro. Tenho como
+                    objetivo melhorar minhas habilidades como desenvolvedor de
+                    software, auxiliando na solução de problemas utilizanddo meu
+                    conhecimento.
                   </span>
                 </div>
                 <form className="buttons" action="Curriculum.pdf">

@@ -16,24 +16,21 @@ export const Projects = () => {
       <section id="wrapper">
         <section id="projectTextsContainer">
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
-            accusantium blanditiis at, distinctio sunt, eos odio ducimus vel
-            repudiandae dolore, nisi obcaecati quo iste quam magnam itaque ipsa
-            veniam officiis?
+            Projetos que valem a pena o destaque, são projetos os quais me
+            diverti bastante no desenvolvimento, além de terem sido ótimos
+            aprendizados.
           </p>
         </section>
       </section>
 
       <section id="projectsCardsContainer">
-        {Array(4).fill(
-          <Cards
-            projectImg="https://images.unsplash.com/photo-1648484479126-10c313d3722d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-            projectAlt="basic blog image"
-            projectTitle="ela é marido da minha mulher"
-            projectText="isso é uma maravilha"
-            projectLink="https://github.com/Takkuya/Basic-blog"
-          />
-        )}
+        <Cards
+          projectImg="https://cdn.discordapp.com/attachments/369658605450035210/959284045961908244/unknown.png"
+          projectAlt="gabrielyamamoto.com título"
+          projectTitle="gabrielyamamoto.com"
+          projectText="Meu primeiro projeto em ReactJS, uma espécie de portifólio em forma de site, feito usando ReactJS e StyledComponents"
+          projectLink="https://github.com/Takkuya/Basic-blog"
+        />
       </section>
     </ProjectsContainer>
   );
